@@ -1,4 +1,4 @@
-import sqlite3
+"import sqlite3 hfcgo
 conn = sqlite3.connect("agenda.db")
 cursor = conn.cursor()
 
