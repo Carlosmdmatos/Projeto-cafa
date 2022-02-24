@@ -1,0 +1,21 @@
+section{
+    display: table;
+    margin: auto;
+}
+
+#form_signup{
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+form label{
+    display:block;
+}
+
+form input{
+    display: block;
+    
+}
+
+
