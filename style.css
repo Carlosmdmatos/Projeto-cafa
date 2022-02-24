@@ -1,12 +1,6 @@
-section{
+.form_signup{
     display: table;
-    margin: auto;
-}
-
-#form_signup{
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
+    margin:50% auto 50%;
 }
 
 form label{
