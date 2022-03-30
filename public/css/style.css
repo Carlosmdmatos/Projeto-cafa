@@ -1,0 +1,16 @@
+.form_signup{
+    display: table;
+    margin:50% auto 50%;
+}
+
+form label{
+    display:block;
+}
+
+form input{
+    display: block;
+    
+}
+
+
+
