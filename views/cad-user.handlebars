@@ -98,35 +98,33 @@ color: #80a9ca;
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.form-posit{
+    text-align: justify;
+    width: 186px;
+    border-left: 0px;
+    margin: auto;
+}
 .form-content{
 
+    /*Fundo Formulário*/
     display:table-cell;
-    margin:50% auto 50%;
+    margin:50% auto;
     background: rgba(0,8,0,.5);
     box-sizing: border-box;
     background-filter: blur(50px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 30px 30px;
+    padding: left 50%;
     color:aliceblue;
-    text-align: justify;
-    
-;
-  
-    
-
-
-
-box-shadow: 0 15px 25px rgba(e,0,0,.6);
-border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(e,0,0,.6);
+    border-radius: 10px;
 }
 
 form label{
-    display:block;
+    display:table;
 }
 
 form input{
-    display: block;
+    display: table;
 
 }
 
@@ -135,6 +133,7 @@ form button{
     border-radius: 5px;
     border-style:outset;
     border-color: #7879B6;
+    
 
 
 }
@@ -152,10 +151,11 @@ footer {
         <h1>BEM VINDO AO PROJETO CAFA!</h1>
         
         </header>
-        <br><br><br><br><br><br>
+        <br><br><br><br>
         <p  class="Text-invit">Insira seu nome, data de nascimento e email, por gentiliza.</p>
+        <br><br>
             <section>
-                <form action="/add-user" method="post">
+                <form class="form-posit" action="/add-user" method="post">
                     <div class="form-content">
                         <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
 
