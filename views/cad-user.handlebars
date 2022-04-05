@@ -54,7 +54,29 @@ table {
 	border-spacing: 0;
 }
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO RESET.CSS*/
-        .form_signup{
+body{
+
+}
+header {
+    background: rgba(202, 252, 241, 0.9);
+    padding: 5% 0;
+}
+header h1{
+/*    font-family: 'Bayon', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6vh;*/
+
+
+font-family: 'Bayon';
+text-align: center;
+font-weight: bolder;
+font-size: 5vh;
+line-height: 144px;
+color: #003862;
+
+}
+.form_signup{
     display: table;
     margin:50% auto 50%;
 }
@@ -69,18 +91,26 @@ form input{
 }
     </style>
 <body>
-    <h1>Bem vindo ao Cafa, Cadastre-se!</h1>
-
-    <form class="form_signup" action="/add-user" method="post">
-    <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
-
-    <label for="insertsenha">Insira uma senha <br><br> <input type="text" required name="valor" ></label> <br><br>
-
-    <button type="Submit">Enviar </button>
+    <header>
+    <h1>BEM VINDO AO PROJETO CAFA!</h1>
     
-    
-    
-</form>
+    </header>
+    <main>
+        <img src= "../public/img/imagemfundo.png">
+        <section>
+            <form class="form_signup" action="/add-user" method="post">
+                <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
+
+                <label for="insertsenha">Insira uma senha <br><br> <input type="text" required name="valor" ></label> <br><br>
+
+                <button type="Submit">Enviar </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="logobyte.png">
+        <p class="copyright">&copy; Copyright Ramo Estudantil IEEE - 2022</p>
+    </footer>
 </body>
 </html>
 
