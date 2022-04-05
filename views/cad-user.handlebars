@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-size: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -54,9 +55,7 @@ table {
 	border-spacing: 0;
 }
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO RESET.CSS*/
-body{
 
-}
 header {
     background: rgba(202, 252, 241, 0.9);
     padding: 5% 0;
@@ -76,6 +75,7 @@ line-height: 144px;
 color: #003862;
 
 }
+
 .form_signup{
     display: table;
     margin:50% auto 50%;
@@ -87,8 +87,14 @@ form label{
 
 form input{
     display: block;
-    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO STYLE.CSS*/
+
 }
+
+footer {
+    background: rgba(202, 252, 241, 0.9);
+    padding: 5% 0;
+}
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO STYLE.CSS*/
     </style>
 <body>
     <header>
@@ -96,7 +102,7 @@ form input{
     
     </header>
     <main>
-        <img src= "../public/img/imagemfundo.png">
+        <img class="bckground" src="bckground.png" alt="Background Projetocafa" /> 
         <section>
             <form class="form_signup" action="/add-user" method="post">
                 <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>

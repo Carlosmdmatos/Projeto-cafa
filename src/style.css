@@ -1,3 +1,6 @@
+body{
+    background-image: url(../public/img/imagemfundo.png);
+}
 .form_signup{
     display: table;
     margin:50% auto 50%;

@@ -4,6 +4,7 @@ const handlebars= require("express-handlebars");
 const bodyparser= require("body-parser");
 const moment= require("moment");
 const User= require("./models/user");
+const path= require("path");
 
 
 app.engine('handlebars', handlebars.engine({
@@ -17,6 +18,8 @@ app.engine('handlebars', handlebars.engine({
     }
 }))
 app.set('view engine', 'handlebars')
+
+app.use(express.static('public/img'));
 
 app.use(bodyparser.urlencoded({extended: false}))
 app.use(bodyparser.json())
@@ -64,8 +67,6 @@ app.post('/add-user', function(req, res){
     })
 });
 
-
-app.use(express.static('public'));
 
 
 
