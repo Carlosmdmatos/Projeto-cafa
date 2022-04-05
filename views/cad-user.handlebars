@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
     <title>Document</title>
 
 
@@ -55,8 +58,10 @@ table {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO RESET.CSS*/
 
 header {
-    background: rgba(202, 252, 241, 0.9);
-    padding: 5% 0;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 15px;
 }
 header h1{
 /*    font-family: 'Bayon', sans-serif;
@@ -64,14 +69,18 @@ header h1{
     text-align: center;
     font-size: 6vh;*/
 
-
-font-family: 'Bayon';
+font-family: 'Bayon', sans-serif;
+font-weight: bolder;
 text-align: center;
 font-weight: bolder;
-font-size: 5vh;
+font-size: 12vh;
 line-height: 144px;
-color: #003862;
+color: #80a9ca;
 
+}
+.Text-invit{
+    color: aliceblue;
+    font-style: italic;
 }
 .login-page{
     background-image: url('bckground.png');
@@ -91,12 +100,25 @@ color: #003862;
 }
 
 .form-content{
-    display: table;
+
+    display:table-cell;
     margin:50% auto 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0,8,0,.5);
+    box-sizing: border-box;
     background-filter: blur(50px);
     -webkit-backdrop-filter: blur(5px);
     padding: 30px 30px;
+    color:aliceblue;
+    text-align: justify;
+    
+;
+  
+    
+
+
+
+box-shadow: 0 15px 25px rgba(e,0,0,.6);
+border-radius: 10px;
 }
 
 form label{
@@ -108,9 +130,19 @@ form input{
 
 }
 
+form button{
+    background: #7879B6;
+    border-radius: 5px;
+    border-style:outset;
+    border-color: #7879B6;
+
+
+}
+
 footer {
     background: rgba(202, 252, 241, 0.9);
     padding: 5% 0;
+    color: aliceblue;
 }
     /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO STYLE.CSS*/
     </style>
@@ -120,19 +152,24 @@ footer {
         <h1>BEM VINDO AO PROJETO CAFA!</h1>
         
         </header>
+        <br><br><br><br><br><br>
+        <p  class="Text-invit">Insira seu nome, data de nascimento e email, por gentiliza.</p>
             <section>
                 <form action="/add-user" method="post">
                     <div class="form-content">
                         <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
 
-                        <label for="insertsenha">Insira uma senha <br><br> <input type="text" required name="valor" ></label> <br><br>
+                        <label for="insertsenha">Insira seu email <br><br> <input type="text" required placeholder="Insira seu email" name="valor" ></label> <br><br>
 
-                        <button type="Submit">Enviar </button>
+                        <button  type="Submit">Enviar </button>
                     </div>
                 </form>
             </section>
     </div>
     </main>
+    <footer>
+        <p class="copyright">&copy; Ramo Estudantil IEEE - WolfByte - 2022</p>
+    </footer>
 </body>
 </html>
 
