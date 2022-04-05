@@ -30,14 +30,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
-    background-size: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -75,10 +73,30 @@ line-height: 144px;
 color: #003862;
 
 }
+.login-page{
+    background-image: url('bckground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.form_signup{
+.form-content{
     display: table;
     margin:50% auto 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-filter: blur(50px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 30px 30px;
 }
 
 form label{
@@ -97,26 +115,24 @@ footer {
     /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTE DO ARQUIVO STYLE.CSS*/
     </style>
 <body>
-    <header>
-    <h1>BEM VINDO AO PROJETO CAFA!</h1>
-    
-    </header>
-    <main>
-        <img class="bckground" src="bckground.png" alt="Background Projetocafa" /> 
-        <section>
-            <form class="form_signup" action="/add-user" method="post">
-                <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
+    <div class="login-page">
+        <header>
+        <h1>BEM VINDO AO PROJETO CAFA!</h1>
+        
+        </header>
+            <section>
+                <form action="/add-user" method="post">
+                    <div class="form-content">
+                        <label for="insertname">Insira seu nome <br><br> <input type="text" required placeholder="nome" name="nome" > </label> <br><br>
 
-                <label for="insertsenha">Insira uma senha <br><br> <input type="text" required name="valor" ></label> <br><br>
+                        <label for="insertsenha">Insira uma senha <br><br> <input type="text" required name="valor" ></label> <br><br>
 
-                <button type="Submit">Enviar </button>
-            </form>
-        </section>
+                        <button type="Submit">Enviar </button>
+                    </div>
+                </form>
+            </section>
+    </div>
     </main>
-    <footer>
-        <img src="logobyte.png">
-        <p class="copyright">&copy; Copyright Ramo Estudantil IEEE - 2022</p>
-    </footer>
 </body>
 </html>
 
