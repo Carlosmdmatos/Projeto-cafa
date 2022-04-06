@@ -20,8 +20,11 @@ const user = sequelize.define('usuarios', {
        type: Sequelize.STRING,
      },
      valor: {
-       type: Sequelize.DOUBLE
-   } 
+       type: Sequelize.STRING,
+   },
+      date:{
+        type: Sequelize.DATE,
+      }
 }); 
 
 //Criar tabela com Sequelize
@@ -29,9 +32,10 @@ const user = sequelize.define('usuarios', {
 
 
 //Inserir Registro banco de dados
-user.create({
+/*user.create({
     nome: "Joaquim",
-    valor: 11
+    valor: 11,
+    date:12031999
 
-})
+})*/
 

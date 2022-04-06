@@ -20,7 +20,7 @@ connection.connect(function(err){
 });
 
 //A partir do MySql, inserir id na tabela users do banco de dados
-connection.query("INSERT INTO usuarios(id_nome,id_valor) VALUES ('Jessica', '123456')", function(err, result){
+connection.query("INSERT INTO usuarios(id_nome,id_valor,id_date) VALUES ('Jessica', '123456','12031999')", function(err, result){
     if(!err){
         console.log('Usuario cadastrado com sucesso!');
     }else{

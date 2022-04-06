@@ -5,7 +5,10 @@ const user = db.sequelize.define('usuarios', {
         type: db.Sequelize.STRING
     },
     valor:{
-        type: db.Sequelize.DOUBLE
+        type: db.Sequelize.STRING
+    },
+    date:{
+        type: db.Sequelize.DATE
     }
 
 })

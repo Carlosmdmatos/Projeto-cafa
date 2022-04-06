@@ -58,7 +58,8 @@ app.post('/add-user', function(req, res){
     //res.send("Nome: " + req.body.nome + "<br>email: " + req.body.email + "<br>senha: " +req.body.senha)    
     User.create({
         nome: req.body.nome,
-        valor:req.body.valor
+        valor:req.body.valor,
+        date:req.body.date
     }).then(function(){
         res.redirect("user")
         //res.send("Cadastrado")
