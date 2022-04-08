@@ -1,0 +1,150 @@
+header {
+    background: #005ec9b4;
+    padding: 20px 0px;
+   }
+   
+   .cabecalho{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+   }
+   
+   .caixa-titulo{
+    position: relative;
+    margin: 1%;
+   }
+   
+   .titulo{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0.5% 0.5% 0% 0.5%;
+   }
+
+   .subtitulo{
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 0.5%;
+   }
+   
+   nav{
+    position: absolute;
+    left: 80%;
+    top: 13%;
+   }
+   
+   nav li {
+    display: inline;
+    /*margin-right: 1%;*/
+   }
+   
+   nav p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+   }
+   
+   nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+   }
+
+   nav a:first-child{
+       padding-right: 15px;
+   }
+   
+   nav a:before{
+    content: "|> ";
+   }
+   
+   nav a:hover{
+    color:rgb(0, 0, 0);
+   
+   }
+   
+    /* CSS do main */
+   main{
+    background: #7fe5ff;
+    padding: 15px 0;
+   }
+   
+    /* CSS do Rodapé */
+    footer{
+     text-align: center;
+     /*background: url(bg.jpg);*/
+     background-color: #005ec9b4;
+     padding: 30px 0px;
+   }
+   
+   .logo{
+    width: 125px;
+   }
+   .copyright{
+     color: #0d3072;
+     font-size: 14px;
+     margin: 20px 0 0;
+   }
+
+/*Já estava escrito*/
+
+/*body{
+    background-image: url(bckground.png);
+}*/
+
+.form_signup{
+    display: table;
+    margin:5% auto 10%;
+}
+
+form label{
+    display:block;
+}
+
+form input{
+    display: block;
+}
+
+form label{
+    padding: 3% 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: rgb(0, 0, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 3px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.resetar {
+	width:40%;
+	padding: 10px 0;
+	background: rgb(0, 0, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	border: none;
+	border-radius: 3px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: green;
+	transform: scale(1);
+}
+
+.resetar:hover {
+	background: red;
+	
+}
