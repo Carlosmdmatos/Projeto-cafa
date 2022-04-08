@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
@@ -90,10 +91,14 @@ color: #80a9ca;
 
 
 .form-posit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align:left;
     width: 186px;
     border-left: 0px;
     margin: auto;
+    
 }
 
 .form-content{
@@ -113,7 +118,7 @@ color: #80a9ca;
     padding:50px;
     position: relative;
     border-top: 50%;
-
+    max-width: 50px;
     
 }
 
@@ -128,8 +133,8 @@ color: #80a9ca;
     
         <section class="form-posit">
             <div class="form-content">
-                Seu email é:{{valor}}<br>
-                Nascido em: {{date}}
+                Seu email é:<br>{{valor}}<br>
+                Nascido em:<br> {{date}}
             </div>
         </section>
     </div>
